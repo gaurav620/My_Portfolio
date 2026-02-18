@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Gaurav Kumar Mehta - Computer Science Student | Web Developer | Python & C Programmer">
+    <meta name="keywords" content="Web Developer, Python, C Programming, Computer Science, Portfolio">
+    <title>Gaurav Kumar Mehta | Web Developer & CS Student</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Particle Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">GKM</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-image-wrapper animate-on-scroll">
+                <div class="hero-image-glow"></div>
+                <img src="assets/images/hero-photo.png" alt="Gaurav Kumar Mehta" class="hero-image">
+            </div>
+            <h1 class="hero-name animate-on-scroll">
+                Hi, I'm <span class="gradient-text">Gaurav Kumar Mehta</span>
+            </h1>
+            <div class="hero-tagline animate-on-scroll">
+                <span id="typed-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description animate-on-scroll">
+                Fullstack MERN Developer | DSA with Python | OOPs with C | Building scalable web applications
+                and solving complex algorithms. Passionate about crafting innovative solutions and continuously
+                expanding my technical expertise.
+            </p>
+            <div class="hero-cta animate-on-scroll">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+                <a href="#experience" class="btn btn-secondary">
+                    <i class="fas fa-rocket"></i> View My Work
+                </a>
+            </div>
+            <div class="social-links animate-on-scroll">
+                <a href="https://github.com/gaurav620" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/gauravkumarmehta" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://leetcode.com/u/gauravkumarmehta100/" target="_blank" class="social-icon">
+                    <i class="fas fa-code"></i>
+                </a>
+                <a href="mailto:gauravkumarmehta100@gmail.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="emoji">👨‍💻</span> About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-image animate-on-scroll">
+                    <div class="about-image-wrapper">
+                        <img src="assets/images/about-photo.png" alt="Gaurav Kumar Mehta">
+                    </div>
+                </div>
+                <div class="about-text animate-on-scroll">
+                    <h3>Passionate Developer & Problem Solver</h3>
+                    <p>
+                        I'm a final year Computer Science student at <strong>JIS College of Engineering</strong> with a
+                        CGPA of 7.63.
+                        My journey in tech is driven by curiosity and a love for building solutions that make a
+                        difference.
+                    </p>
+                    <p>
+                        I specialize in <strong>fullstack development using the MERN stack</strong> (MongoDB,
+                        Express.js, React.js, Node.js),
+                        creating scalable and responsive web applications. My expertise in <strong>Python</strong>
+                        shines in solving
+                        <strong>Data Structures & Algorithms</strong> problems, while I leverage <strong>C</strong> for
+                        understanding
+                        core programming concepts like <strong>Object-Oriented Programming (OOP)</strong>, pointers, and
+                        memory management.
+                    </p>
+                    <p>
+                        Beyond coding, I'm passionate about continuous learning, exploring new technologies, and
+                        contributing to innovative projects.
+                        Whether it's building AI-powered applications or crafting beautiful user interfaces, I bring
+                        dedication and technical excellence to every project.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kalyani, Nadia, West Bengal</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>BTech in CSE (2022-2026)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-language"></i>
+                            <span>Hindi (Native), English (Fluent)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Open to Hybrid/Remote/On-site</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="emoji">🚀</span> Project Experience
+            </h2>
+            <div class="timeline">
+                <!-- Project 1 -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-header">
+                            <h3>
+                                <i class="fas fa-eye"></i> Eye-Guard — AI-Powered Eye Strain Detection
+                            </h3>
+                            <span class="timeline-date">2025</span>
+                        </div>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                        <p class="timeline-description">
+                            Collaborated in a 4-member team to develop an AI-powered eye strain detection system that
+                            monitors user activity and provides real-time alerts.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li><strong>My Role:</strong> Backend development, database design (SQLite), API
+                                integration, and system testing</li>
+                            <li>Built Flask REST API endpoints for data handling and integrated frontend with backend
+                                services</li>
+                            <li>Implemented user session management and PDF report generation module</li>
+                            <li><strong>Team:</strong> Gaurav Kumar Mehta (Backend), Ayan Biswas (ML), Arpan Mirsha
+                                (Frontend), Arka Bhattacharya (UI/UX)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-header">
+                            <h3>
+                                <i class="fas fa-bicycle"></i> Bike & Scooter Rental System
+                            </h3>
+                            <span class="timeline-date">2025</span>
+                        </div>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                        </div>
+                        <p class="timeline-description">
+                            Developed a comprehensive rental platform with user authentication, booking system, and
+                            payment integration for seamless vehicle rentals.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li><strong>My Role:</strong> Full-stack Backend API development, database schema design,
+                                and server-side logic</li>
+                            <li>Architected MongoDB schema for efficient data management</li>
+                            <li>Created RESTful APIs for vehicle listing, booking management, and user profiles</li>
+                            <li>Implemented robust authentication and authorization mechanisms</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Certification Achievement -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot achievement-dot"></div>
+                    <div class="timeline-card glass-card achievement-card">
+                        <div class="timeline-header">
+                            <h3>
+                                <i class="fas fa-trophy"></i> Patent Publication
+                            </h3>
+                            <span class="timeline-date">2025</span>
+                        </div>
+                        <p class="timeline-description">
+                            <strong>Tumour Detection Using Deep Learning</strong> — Contributed to AI-based system for
+                            medical image analysis;
+                            team project for healthcare automation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 3: PropertyFinder -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-header">
+                            <h3>
+                                <i class="fas fa-home"></i> PropertyFinder - Real Estate Platform
+                            </h3>
+                            <span class="timeline-date">2025</span>
+                        </div>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">MERN Stack</span>
+                        </div>
+                        <p class="timeline-description">
+                            Built a comprehensive real estate platform using the MERN stack, enabling users to search,
+                            filter, and manage property listings with advanced search capabilities.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Developed full-stack application with React.js frontend and Node.js/Express backend</li>
+                            <li>Implemented property search with filters, user authentication, and role-based access
+                            </li>
+                            <li>Designed responsive UI with modern UX patterns for seamless user experience</li>
+                            <li>Integrated MongoDB for efficient data storage and retrieval</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 4: Expense Tracker -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-header">
+                            <h3>
+                                <i class="fas fa-wallet"></i> Expense Tracker Application
+                            </h3>
+                            <span class="timeline-date">2025</span>
+                        </div>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Local Storage</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                        </div>
+                        <p class="timeline-description">
+                            Created an intuitive expense tracking application with data visualization, category
+                            management, and persistent storage for personal finance management.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Built dynamic UI with Bootstrap for responsive design across devices</li>
+                            <li>Implemented local storage for data persistence without backend dependency</li>
+                            <li>Added expense categorization, filtering, and summary statistics</li>
+                            <li>Designed clean interface for easy expense entry and tracking</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 5: Full Stack AI Agent -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-header">
+                            <h3>
+                                <i class="fas fa-robot"></i> Full Stack AI Agent
+                            </h3>
+                            <span class="timeline-date">2025</span>
+                        </div>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Flask/FastAPI</span>
+                            <span class="tech-tag">AI/ML</span>
+                        </div>
+                        <p class="timeline-description">
+                            Developed an intelligent AI agent application combining modern frontend with Python-based ML
+                            backend for automated task processing and decision-making.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Integrated React.js frontend with Python Flask/FastAPI backend</li>
+                            <li>Implemented AI/ML models for intelligent task automation</li>
+                            <li>Created RESTful APIs for seamless frontend-backend communication</li>
+                            <li>Designed responsive interface for user interaction with AI agent</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 6: Password Keeper -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-header">
+                            <h3>
+                                <i class="fas fa-lock"></i> Password Keeper - Secure Vault
+                            </h3>
+                            <span class="timeline-date">2025</span>
+                        </div>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">Encryption</span>
+                        </div>
+                        <p class="timeline-description">
+                            Built a secure password management application with encryption, CRUD operations, and
+                            user-friendly interface for storing sensitive credentials safely.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Implemented complete CRUD operations for password management</li>
+                            <li>Added encryption for secure storage of sensitive data</li>
+                            <li>Designed intuitive UI with hover effects and smooth animations</li>
+                            <li>Created search and filter functionality for easy password retrieval</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="emoji">⚡</span> Technical Skills
+            </h2>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category animate-on-scroll">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>C (OOP, Pointers, Memory)</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-fill" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Python (DSA & Algorithms)</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-fill" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MERN Stack -->
+                <div class="skill-category animate-on-scroll">
+                    <h3><i class="fas fa-layer-group"></i> MERN Stack</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                    </div>
+                </div>
+
+                <!-- Web Technologies -->
+                <div class="skill-category animate-on-scroll">
+                    <h3><i class="fas fa-laptop-code"></i> Web Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript (ES6+)</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category animate-on-scroll">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQLite</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category animate-on-scroll">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Postman</span>
+                    </div>
+                </div>
+
+                <!-- Core CS Concepts -->
+                <div class="skill-category animate-on-scroll">
+                    <h3><i class="fas fa-brain"></i> Core CS Concepts</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span>
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">SDLC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="emoji">🎓</span> Education & Certifications
+            </h2>
+
+            <!-- Education Timeline -->
+            <div class="education-grid">
+                <!-- Bachelor's Degree -->
+                <div class="education-card glass-card animate-on-scroll">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelor of Technology in Computer Science Engineering</h3>
+                        <h4>JIS College of Engineering</h4>
+                        <p class="education-location">Kalyani, Nadia, WB</p>
+                        <p class="education-duration">2022 - 2026</p>
+                        <p class="education-grade">CGPA: <strong>7.63</strong></p>
+                    </div>
+                </div>
+
+                <!-- 12th Grade -->
+                <div class="education-card glass-card animate-on-scroll">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>12th Grade (CBSE)</h3>
+                        <h4>VJ International School</h4>
+                        <p class="education-location">Bhagalpur, Bihar</p>
+                        <p class="education-duration">2020</p>
+                    </div>
+                </div>
+
+                <!-- 10th Grade -->
+                <div class="education-card glass-card animate-on-scroll">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>10th Grade (CBSE)</h3>
+                        <h4>Sri Rani Saraswati Vidya Mandir</h4>
+                        <p class="education-location">Forbesganj, Bihar</p>
+                        <p class="education-duration">2018</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <h3 class="subsection-title animate-on-scroll">
+                <i class="fas fa-certificate"></i> Certifications & Achievements
+            </h3>
+            <div class="certifications-grid">
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-badge">
+                        <i class="fas fa-python"></i>
+                    </div>
+                    <h4>GUVI Certified Course on Python</h4>
+                </div>
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-badge">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4>GUVI Certified Course on AI for India 2.0</h4>
+                </div>
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-badge">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>Executive Diploma in Innovation Management</h4>
+                </div>
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-badge">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>US Stocks Essentials for Indians</h4>
+                </div>
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-badge">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h4>Certificate of Participation in Level 1.1: E-Commerce</h4>
+                </div>
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-badge">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Technical Lead — MaJIStic Annual Cultural Fest, JIS College (2024-26)</h4>
+                </div>
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-badge">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h4>TCS CodeVita Season 12 - Round 1 Qualified (2025)</h4>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        <strong>Rank: 5539</strong> | Advanced to Round 2 Coding Battle
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="emoji">📬</span> Get In Touch
+            </h2>
+            <p class="contact-description animate-on-scroll">
+                I'm currently looking for new opportunities and my inbox is always open.
+                Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            </p>
+
+            <div class="contact-grid">
+                <div class="contact-card glass-card animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:gauravkumarmehta100@gmail.com">gauravkumarmehta100@gmail.com</a>
+                </div>
+
+                <div class="contact-card glass-card animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <a href="tel:+917543829179">+91 7543829179</a>
+                </div>
+
+                <div class="contact-card glass-card animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://linkedin.com/in/gauravkumarmehta" target="_blank">Connect with me</a>
+                </div>
+
+                <div class="contact-card glass-card animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/gaurav620" target="_blank">@gaurav620</a>
+                </div>
+
+                <div class="contact-card glass-card animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>LeetCode</h3>
+                    <a href="https://leetcode.com/u/gauravkumarmehta100/" target="_blank">View Profile</a>
+                </div>
+
+                <div class="contact-card glass-card animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Kalyani, Nadia, West Bengal</p>
+                </div>
+            </div>
+
+            <div class="contact-cta animate-on-scroll">
+                <a href="mailto:gauravkumarmehta100@gmail.com" class="btn btn-primary btn-large">
+                    <i class="fas fa-paper-plane"></i> Send Me an Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Gaurav Kumar Mehta. Crafted with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i>
+            </p>
+            <div class="footer-social">
+                <a href="https://github.com/gaurav620" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/gauravkumarmehta" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://leetcode.com/u/gauravkumarmehta100/" target="_blank"><i class="fas fa-code"></i></a>
+                <a href="mailto:gauravkumarmehta100@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
