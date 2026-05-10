@@ -322,6 +322,44 @@ class SkillBars {
 }
 
 // ========================================
+// Dark / Light Mode Toggle
+// ========================================
+class ThemeToggle {
+    constructor() {
+        this.btn = document.getElementById('themeToggle');
+        this.icon = document.getElementById('themeIcon');
+        this.body = document.body;
+        this.init();
+    }
+
+    init() {
+        const saved = localStorage.getItem('portfolio-theme');
+        if (saved === 'light') {
+            this.enableLight();
+        }
+        this.btn.addEventListener('click', () => {
+            if (this.body.classList.contains('light-mode')) {
+                this.enableDark();
+            } else {
+                this.enableLight();
+            }
+        });
+    }
+
+    enableLight() {
+        this.body.classList.add('light-mode');
+        this.icon.className = 'fas fa-sun';
+        localStorage.setItem('portfolio-theme', 'light');
+    }
+
+    enableDark() {
+        this.body.classList.remove('light-mode');
+        this.icon.className = 'fas fa-moon';
+        localStorage.setItem('portfolio-theme', 'dark');
+    }
+}
+
+// ========================================
 // Initialize All Components
 // ========================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -358,6 +396,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize skill bars animation
     new SkillBars();
+
+    // Initialize theme toggle
+    new ThemeToggle();
 });
 
 // ========================================

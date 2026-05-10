@@ -98,6 +98,105 @@
     --shadow-glow: 0 0 30px rgba(102, 126, 234, 0.3);
 }
 
+/* ========================================
+   Light Mode Theme
+   ======================================== */
+body.light-mode {
+    --bg-primary: #f0f4ff;
+    --bg-secondary: #e8eeff;
+    --bg-card: rgba(255, 255, 255, 0.8);
+    --bg-glass: rgba(255, 255, 255, 0.7);
+    --text-primary: #0f0a1e;
+    --text-secondary: #4a4a6a;
+    --text-muted: #6b6b8a;
+    --text-accent: #6366f1;
+    --border-glow: rgba(99, 102, 241, 0.2);
+    --shadow-card: 0 8px 32px rgba(99, 102, 241, 0.12);
+    --shadow-glow: 0 0 30px rgba(99, 102, 241, 0.1);
+    --dark-gradient: linear-gradient(180deg, #f0f4ff 0%, #e8eeff 50%, #dde5ff 100%);
+}
+
+body.light-mode canvas#particles {
+    opacity: 0.3;
+}
+
+body.light-mode .mesh-gradient {
+    opacity: 0.15;
+}
+
+body.light-mode .navbar {
+    background: rgba(240, 244, 255, 0.92);
+    border-bottom: 1px solid rgba(99, 102, 241, 0.12);
+}
+
+body.light-mode .glass-card {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(99, 102, 241, 0.15);
+    box-shadow: 0 4px 24px rgba(99, 102, 241, 0.1);
+}
+
+body.light-mode .skill-category {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+body.light-mode .project-card {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+body.light-mode .section-badge {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--accent-indigo);
+    border-color: rgba(99, 102, 241, 0.2);
+}
+
+body.light-mode .nav-link {
+    color: var(--text-secondary);
+}
+
+body.light-mode .nav-link:hover,
+body.light-mode .nav-link.active {
+    color: var(--accent-indigo);
+}
+
+body.light-mode .footer {
+    background: rgba(232, 238, 255, 0.9);
+    border-top: 1px solid rgba(99, 102, 241, 0.12);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: var(--bg-glass);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--text-primary);
+    width: 42px;
+    height: 42px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: var(--transition-normal);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+    background: var(--primary-gradient);
+    border-color: transparent;
+    transform: rotate(20deg) scale(1.1);
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+}
+
+body.light-mode .theme-toggle {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: rgba(99, 102, 241, 0.2);
+    color: var(--accent-indigo);
+}
+
 * {
     margin: 0;
     padding: 0;
