@@ -1340,6 +1340,27 @@ body {
     color: var(--text-secondary);
 }
 
+.cert-badge-sap {
+    background: linear-gradient(135deg, #0070f3 0%, #00aaff 100%) !important;
+}
+
+.cert-verify-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent-cyan);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.cert-verify-link:hover {
+    color: var(--accent-indigo);
+    text-decoration: underline;
+}
+
 .leadership-org {
     color: var(--text-accent);
     margin-bottom: 0.75rem;
