@@ -1410,6 +1410,10 @@ body {
 
 .contact-cta {
     text-align: center;
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* ========================================

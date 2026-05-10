@@ -1,0 +1,145 @@
+%-------------------------------------------------------------------------------
+% Gaurav Kumar Mehta - Resume (Tailored for Galaxy.ai SWE Intern)
+% Single-page A4 | ATS-friendly | Compile with pdfLaTeX on Overleaf
+%-------------------------------------------------------------------------------
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[a4paper, top=0.4in, bottom=0.4in, left=0.5in, right=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% --- Hyperlink styling ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdftitle={Gaurav Kumar Mehta - Resume},
+    pdfauthor={Gaurav Kumar Mehta}
+}
+
+% --- Remove page numbers ---
+\pagestyle{empty}
+
+% --- Tight line spacing ---
+\linespread{1.0}
+
+% --- Section formatting (bold, all caps, with bottom rule) ---
+\titleformat{\section}
+  {\bfseries\normalsize\uppercase}
+  {}{0em}{}[\vspace{-5pt}\hrulefill]
+\titlespacing*{\section}{0pt}{4pt}{1pt}
+
+% --- Tight bullet list ---
+\setlist[itemize]{
+    leftmargin=1.2em,
+    topsep=1pt,
+    parsep=0pt,
+    itemsep=0pt,
+    label=\textbullet
+}
+
+% --- Custom commands ---
+\newcommand{\role}[2]{%
+  \noindent\textbf{#1}\hfill\textit{\small #2}\par\vspace{1pt}
+}
+
+\newcommand{\skillrow}[2]{%
+  \noindent\textbf{#1:} #2\par\vspace{1pt}
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\begin{document}
+
+%===============================================================================
+% HEADER
+%===============================================================================
+\begin{center}
+    {\LARGE \textbf{GAURAV KUMAR MEHTA}}\\[2pt]
+    {\small Kalyani, West Bengal, India}\\[2pt]
+    {\small \href{mailto:gauravkumarmehta100@gmail.com}{gauravkumarmehta100@gmail.com} $\vert$
+    +91-7543829179 $\vert$
+    \href{https://www.linkedin.com/in/gauravkumarmehta}{LinkedIn} $\vert$
+    \href{https://github.com/gaurav620}{GitHub}}
+\end{center}
+
+%===============================================================================
+% SUMMARY (tailored for Galaxy.ai: AI agents, Next.js, TypeScript, Tailwind)
+%===============================================================================
+\section*{Summary}
+Software Engineering Student (B.Tech CSE, 2026) building AI-powered, full-stack products with Next.js, TypeScript, React, and Tailwind CSS. Hands-on experience integrating LLMs (OpenAI gpt-4o-mini) into real user-facing apps, and shipping features end-to-end using coding agents (Claude, Cursor). Published patent in Deep Learning. Curious builder who codes on weekends, reaches for AI agents to ship faster, and takes ownership of features from whiteboard to production.
+
+%===============================================================================
+% EDUCATION
+%===============================================================================
+\section*{Education}
+\role{B.Tech in Computer Science Engineering}{08/2022 -- 06/2026}
+JIS College of Engineering, Kalyani, West Bengal \quad \textit{CGPA: 7.8/10}\par\vspace{1pt}
+\noindent CBSE XII - VJ International School, Bhagalpur, Bihar \hfill \textit{2020}\par\vspace{1pt}
+\noindent CBSE X - Sri Rani Saraswati Vidya Mandir, Forbesganj, Bihar \hfill \textit{2018}
+
+%===============================================================================
+% TECHNICAL SKILLS (TypeScript, Next.js, Tailwind elevated to top)
+%===============================================================================
+\section*{Technical Skills}
+\skillrow{Languages}{JavaScript, TypeScript, Python, SQL}
+\skillrow{Frontend}{Next.js, React.js, Tailwind CSS, HTML5, CSS3, Responsive Design, Framer Motion}
+\skillrow{Backend}{Node.js, Express.js, REST APIs, JWT Authentication, bcrypt, Socket.io}
+\skillrow{Databases}{MongoDB (NoSQL), MySQL (SQL), Mongoose ODM}
+\skillrow{AI / LLM}{OpenAI API (gpt-4o-mini), Prompt Engineering, LLM Integration, Coding Agents (Claude, Cursor)}
+\skillrow{Tools \& Testing}{Git, GitHub, GitHub Actions (CI/CD), Vercel, VS Code, Postman, Jest}
+
+%===============================================================================
+% EXPERIENCE / PROJECTS
+%===============================================================================
+\section*{Projects}
+
+\role{DataMind AI -- AI-Powered Analytics Dashboard $\vert$ \textit{GFG Hackfest 2026, Team of 3} $\vert$ \textit{\href{https://data-mind-ai-dash.vercel.app/}{Live Demo}}}{2026}
+\begin{itemize}
+    \item Built an AI-powered analytics dashboard where users upload raw CSV datasets and query them in plain English, integrating OpenAI gpt-4o-mini for natural-language-to-SQL contextualization, fully client-side with zero backend.
+    \item Engineered the data ingestion engine that auto-parses CSVs, infers column types, and dynamically builds query context for the LLM, enabling accurate responses across arbitrary user datasets.
+    \item Developed dynamic chart generation transforming LLM output into responsive Recharts visualizations (Bar, Line, Pie, Area), with context-aware global filters using React Hooks and Context API.
+    \item Configured the app as an installable PWA with offline service-worker caching (vite-plugin-pwa); shipped a dual-theme UI with Tailwind CSS, Glassmorphism, and Framer Motion. Deployed to Vercel via GitHub Actions CI/CD.
+\end{itemize}
+
+\role{Bike \& Scooter Rental System -- Full-Stack MERN Platform $\vert$ \textit{\href{https://bike-scooter-rental-system.vercel.app/}{Live Demo}}}{07/2025 -- 12/2025}
+\begin{itemize}
+    \item Architected and shipped a full-stack vehicle rental platform end-to-end using JavaScript, React.js, Node.js, Express.js, and MongoDB, supporting 200+ users with booking, payment, and ride management.
+    \item Designed 15+ REST APIs and UI components following MVC architecture with Mongoose ODM, achieving sub-200 ms response latency.
+    \item Integrated Razorpay payment gateway and built real-time GPS tracking with Socket.io, reducing manual booking overhead by 40\%.
+    \item Implemented JWT and bcrypt authentication with role-based access control; wrote unit tests with Jest and deployed to Vercel via GitHub Actions CI/CD pipeline.
+\end{itemize}
+
+\role{MaJIStic Fest Website -- Backend Developer $\vert$ \textit{Team of 7} $\vert$ \textit{\href{https://majistic.org/}{majistic.org}}}{06/2024 -- 05/2026}
+\begin{itemize}
+    \item Contributed to the backend of the official fest website (majistic.org) built with Next.js and Node.js, serving 5,000+ attendees across 3 annual editions on live fest days.
+    \item Developed REST API endpoints for online ticket registration and event listing modules using Express.js and MongoDB; followed Agile sprint cycles and code reviews with a 7-member team via Git/GitHub.
+\end{itemize}
+
+%===============================================================================
+% CERTIFICATIONS & ACHIEVEMENTS
+%===============================================================================
+\section*{Certifications \& Achievements}
+\begin{itemize}
+    \item \textbf{Patent Published -- Tumour Detection Using Deep Learning (2025):} Built a CNN-based AI system for automated medical image analysis using TensorFlow/Keras, demonstrating analytical thinking and end-to-end research skills.
+    \item \textbf{Full Stack MERN Development -- Ardent Computech} (Completed 08/2025): Hands-on training in MongoDB, Express, React, and Node with capstone deployment.
+    \item \textbf{TCS CodeVita Season 12 (2025):} Global Rank 5539 -- Advanced to Round 2.
+\end{itemize}
+
+%===============================================================================
+% LEADERSHIP
+%===============================================================================
+\section*{Leadership}
+\role{Technical Lead (Senior) -- MaJIStic Annual Cultural Fest, JIS College of Engineering}{2024 -- 2026}
+\begin{itemize}
+    \item Led the tech team as one of 5 senior leads (4th year CSE), coordinating with 20+ event teams and college administration for a fest attended by 5,000+ students.
+    \item Mentored 2 junior developers (2nd year) on full-stack development, Git workflows, and production deployment to ensure long-term project handover.
+\end{itemize}
+
+\end{document}
