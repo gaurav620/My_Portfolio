@@ -266,25 +266,24 @@ class MobileMenu {
 }
 
 // ========================================
-// Intersection Observer for Animations
+// Intersection Observer for 2026 Animations
 // ========================================
 class ScrollAnimations {
     constructor() {
-        this.animatedElements = document.querySelectorAll('.animate-on-scroll');
+        this.animatedElements = document.querySelectorAll('.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale');
         this.init();
     }
 
     init() {
         const observerOptions = {
             threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
+            rootMargin: '0px 0px -50px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
+                    entry.target.classList.add('visible');
                     observer.unobserve(entry.target);
                 }
             });
@@ -332,12 +331,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize typed text effect
     const typedElement = document.getElementById('typed-text');
     const typedTexts = [
-        'MERN Stack Developer',
-        'Fullstack Developer',
+        'Next.js & React Developer',
+        'AI & LLM Integration Expert',
+        'Full-Stack MERN Developer',
+        'TypeScript Specialist',
+        'OpenAI API Developer',
         'Python DSA Expert',
-        'C Programmer',
-        'Problem Solver',
-        'Tech Enthusiast'
+        'Problem Solver'
     ];
     new TypeWriter(typedElement, typedTexts);
 
