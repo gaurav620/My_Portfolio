@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaurav Kumar Mehta - Resume</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 10pt;
+    color: #1a1a2e;
+    background: #f5f5f5;
+    line-height: 1.45;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    padding: 18mm 16mm 14mm 16mm;
+    background: #fff;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.15);
+  }
+
+  /* Print toolbar */
+  .toolbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #6366f1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 10px 20px;
+    z-index: 999;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+  }
+  .toolbar span { opacity: 0.85; }
+  .toolbar a, .toolbar button {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 6px;
+    padding: 6px 16px;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-weight: 600;
+  }
+  .toolbar a:hover, .toolbar button:hover { background: rgba(255,255,255,0.35); }
+
+  @media print {
+    .toolbar { display: none; }
+    body { background: #fff; }
+    .page { margin: 0; padding: 14mm 14mm 10mm 14mm; box-shadow: none; }
+  }
+
+  /* Header */
+  .header { text-align: center; margin-bottom: 8px; }
+  .header h1 { font-size: 20pt; font-weight: 700; letter-spacing: 0.5px; color: #0f0a1e; }
+  .header .location { font-size: 9pt; color: #555; margin: 3px 0; }
+  .header .contact-line { font-size: 9pt; color: #333; }
+  .header .contact-line a { color: #4f46e5; text-decoration: none; }
+
+  /* Sections */
+  section { margin-bottom: 8px; }
+  .section-title {
+    font-size: 9.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1.5px solid #1a1a2e;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+    color: #0f0a1e;
+  }
+
+  /* Summary */
+  .summary p { font-size: 9.5pt; color: #333; }
+
+  /* Education */
+  .edu-row { display: flex; justify-content: space-between; align-items: baseline; }
+  .edu-row .title { font-weight: 600; font-size: 9.5pt; }
+  .edu-row .date { font-size: 9pt; color: #555; font-style: italic; white-space: nowrap; margin-left: 8px; }
+  .edu-sub { font-size: 9pt; color: #444; margin-top: 1px; }
+
+  /* Skills */
+  .skill-row { font-size: 9.5pt; margin-bottom: 2px; }
+  .skill-row strong { color: #0f0a1e; }
+
+  /* Projects */
+  .project { margin-bottom: 7px; }
+  .project-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .project-title { font-weight: 700; font-size: 9.5pt; }
+  .project-date { font-size: 9pt; font-style: italic; color: #555; white-space: nowrap; margin-left: 8px; }
+  .project-title a { color: #4f46e5; text-decoration: none; }
+  ul { padding-left: 14px; margin-top: 2px; }
+  ul li { font-size: 9pt; margin-bottom: 1px; color: #333; }
+
+  /* Certifications */
+  .cert-item { font-size: 9.5pt; margin-bottom: 3px; color: #333; }
+  .cert-item strong { color: #0f0a1e; }
+
+  /* Leadership */
+  .lead-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .lead-title { font-weight: 700; font-size: 9.5pt; }
+  .lead-date { font-size: 9pt; font-style: italic; color: #555; white-space: nowrap; margin-left: 8px; }
+  .lead-org { font-size: 9pt; color: #444; margin-top: 1px; margin-bottom: 2px; }
+  .edu-row-gap { margin-top: 3px; }
+  .credly-link { color: #4f46e5; text-decoration: none; }
+  .credly-link:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <span>Gaurav Kumar Mehta — Resume</span>
+  <button onclick="window.print()">🖨️ Print / Save as PDF</button>
+  <a href="../../index.html">← Back to Portfolio</a>
+</div>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>GAURAV KUMAR MEHTA</h1>
+    <div class="location">Kalyani, West Bengal, India</div>
+    <div class="contact-line">
+      <a href="mailto:gauravkumarmehta100@gmail.com">gauravkumarmehta100@gmail.com</a>
+      &nbsp;|&nbsp; +91-7543829179
+      &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/gauravkumarmehta" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      &nbsp;|&nbsp; <a href="https://github.com/gaurav620" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <section class="summary">
+    <div class="section-title">Summary</div>
+    <p>Software Engineering Student (B.Tech CSE, 2026) building AI-powered, full-stack products with Next.js, TypeScript, React, and Tailwind CSS. Hands-on experience integrating LLMs (OpenAI gpt-4o-mini) into real user-facing apps, and shipping features end-to-end using coding agents (Claude, Cursor). Published patent in Deep Learning. Curious builder who codes on weekends, reaches for AI agents to ship faster, and takes ownership of features from whiteboard to production.</p>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <div class="section-title">Education</div>
+    <div class="edu-row">
+      <span class="title">B.Tech in Computer Science Engineering</span>
+      <span class="date">08/2022 – 06/2026</span>
+    </div>
+    <div class="edu-sub">JIS College of Engineering, Kalyani, West Bengal &nbsp;|&nbsp; <strong>CGPA: 7.8/10</strong></div>
+    <div class="edu-row edu-row-gap">
+      <span class="edu-sub">CBSE XII — VJ International School, Bhagalpur, Bihar</span>
+      <span class="date">2020</span>
+    </div>
+    <div class="edu-row">
+      <span class="edu-sub">CBSE X — Sri Rani Saraswati Vidya Mandir, Forbesganj, Bihar</span>
+      <span class="date">2018</span>
+    </div>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section>
+    <div class="section-title">Technical Skills</div>
+    <div class="skill-row"><strong>Languages:</strong> JavaScript, TypeScript, Python, SQL</div>
+    <div class="skill-row"><strong>Frontend:</strong> Next.js, React.js, Tailwind CSS, HTML5, CSS3, Responsive Design, Framer Motion</div>
+    <div class="skill-row"><strong>Backend:</strong> Node.js, Express.js, REST APIs, JWT Authentication, bcrypt, Socket.io</div>
+    <div class="skill-row"><strong>Databases:</strong> MongoDB (NoSQL), MySQL (SQL), Mongoose ODM</div>
+    <div class="skill-row"><strong>AI / LLM:</strong> OpenAI API (gpt-4o-mini), Prompt Engineering, LLM Integration, Coding Agents (Claude, Cursor)</div>
+    <div class="skill-row"><strong>Tools &amp; Testing:</strong> Git, GitHub, GitHub Actions (CI/CD), Vercel, VS Code, Postman, Jest</div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <div class="section-title">Projects</div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-title">DataMind AI — AI-Powered Analytics Dashboard &nbsp;|&nbsp; GFG Hackfest 2026, Team of 3 &nbsp;|&nbsp; <a href="https://data-mind-ai-dash.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a></span>
+        <span class="project-date">2026</span>
+      </div>
+      <ul>
+        <li>Built an AI analytics dashboard where users upload CSVs and query in plain English using OpenAI gpt-4o-mini for NL-to-SQL, fully client-side with zero backend.</li>
+        <li>Engineered data ingestion engine that auto-parses CSVs, infers column types, and builds LLM query context for accurate responses across arbitrary datasets.</li>
+        <li>Developed dynamic chart generation (Bar, Line, Pie, Area) from LLM output using Recharts with context-aware global filters via React Hooks and Context API.</li>
+        <li>Configured as installable PWA with offline caching (vite-plugin-pwa); dual-theme UI with Tailwind, Glassmorphism, Framer Motion. Deployed via GitHub Actions CI/CD.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-title">Bike &amp; Scooter Rental System — Full-Stack MERN Platform &nbsp;|&nbsp; <a href="https://bike-scooter-rental-system.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a></span>
+        <span class="project-date">07/2025 – 12/2025</span>
+      </div>
+      <ul>
+        <li>Architected a full-stack vehicle rental platform with React.js, Node.js, Express.js, and MongoDB supporting 200+ users with booking, payment, and ride management.</li>
+        <li>Designed 15+ REST APIs following MVC architecture with Mongoose ODM, achieving sub-200 ms response latency.</li>
+        <li>Integrated Razorpay payment gateway and real-time GPS tracking with Socket.io, reducing manual booking overhead by 40%.</li>
+        <li>Implemented JWT + bcrypt auth with role-based access control; wrote unit tests with Jest; deployed to Vercel via GitHub Actions CI/CD.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-title">MaJIStic Fest Website — Backend Developer &nbsp;|&nbsp; Team of 7 &nbsp;|&nbsp; <a href="https://majistic.org/" target="_blank" rel="noopener noreferrer">majistic.org</a></span>
+        <span class="project-date">06/2024 – 05/2026</span>
+      </div>
+      <ul>
+        <li>Contributed to the backend of the official fest website (Next.js + Node.js), serving 5,000+ attendees across 3 annual editions.</li>
+        <li>Developed REST API endpoints for ticket registration and event listings with Express.js and MongoDB; Agile sprints and Git/GitHub code reviews with a 7-member team.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section>
+    <div class="section-title">Certifications &amp; Achievements</div>
+    <div class="cert-item cert-credly">• <strong>SAP Certified — Back-End Developer — ABAP Cloud (Mar 2026):</strong> Verified on <a href="https://www.credly.com/earner/earned/badge/c3585417-4a1d-40d7-a075-bceb52044acc" target="_blank" rel="noopener noreferrer" class="credly-link">Credly</a>. Expires Apr 2027.</div>
+    <div class="cert-item">• <strong>Patent Published — Tumour Detection Using Deep Learning (2025):</strong> CNN-based AI system for automated medical image analysis using TensorFlow/Keras.</div>
+    <div class="cert-item">• <strong>Full Stack MERN Development — Ardent Computech</strong> (Completed 08/2025): Hands-on training with capstone deployment.</div>
+    <div class="cert-item">• <strong>TCS CodeVita Season 12 (2025):</strong> Global Rank 5539 — Advanced to Round 2.</div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section>
+    <div class="section-title">Leadership</div>
+    <div class="lead-header">
+      <span class="lead-title">Technical Lead (Senior) — MaJIStic Annual Cultural Fest</span>
+      <span class="lead-date">2024 – 2026</span>
+    </div>
+    <div class="lead-org">JIS College of Engineering</div>
+    <ul>
+      <li>Led the tech team as one of 5 senior leads (4th year CSE), coordinating with 20+ event teams and college administration for a fest attended by 5,000+ students.</li>
+      <li>Mentored 2 junior developers (2nd year) on full-stack development, Git workflows, and production deployment for long-term project handover.</li>
+    </ul>
+  </section>
+
+</div>
+</body>
+</html>
