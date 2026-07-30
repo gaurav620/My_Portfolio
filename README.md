@@ -1,0 +1,15 @@
+# My Portfolio
+
+This is a static portfolio website.
+
+## Run on localhost
+
+From the project root:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open:
+
+[http://localhost:8000](http://localhost:8000)
